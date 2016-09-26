@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+// Given a string, for example, “Hello World”, write some code to reverse that string (“dlroW olleH”).
+
+// (Hint: try using the Array.reverse() method! But, if you do, try solving it just using looping as well).
+
+// //store as a variable
+// var string = "Hello World";
+// // convert string to array
+// var arr = (string.split(""));
+// //reverse content of array
+// arr.reverse();
+// // //convert array back into an string
+// var reverse = arr.join("");
+
+// console.log(reverse);
+
+
+// //store as a variable
+var string = "Hello World";
+//convert string to array
+var arr = (string.split(""));
+//create empty array
+var backwards = [];
+
+ 
+// loop through arr starting at 0 count. While the length of arr is greater
+//than zero move one element over
+for (var i = 0; arr.length > 0; i++) {
+	// pop the last element in the arr array off and push it into the empty backwards array
+	backwards.push(arr.pop());
+	}
+	//convert the array back into a string and print
+	console.log(backwards.join(""));
+
+</script>
+
+

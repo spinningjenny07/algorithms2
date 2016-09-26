@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		//If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+		//Find the sum of all the multiples of 3 or 5 below 1500.
+
+		var multiples = [];
+		var sum = 0;
+		//start counting at 1 and stop at 1500 adding one every time
+		for ( var i = 1; i < 1500; i++) {
+			//if the number is a multiple of 3 or 5 push the number into multiples array
+			if (i % 3 === 0 || i % 5 === 0) {
+				multiples.push(i);
+				sum = sum + i;
+			}
+			//add the current contents of the array and the new number together
+			
+
+		}console.log(multiples);
+		console.log(sum);
+	
+	</script>
+
+</body>
+</html>

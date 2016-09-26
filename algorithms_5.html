@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+	//Write a guessing game using looping and prompts!
+
+//Have the user come up with a number between 1 and 100 (inclusive), but not enter it into the computer. Have the computer guess numbers in that same range, and ask the user if that is the number (e.g. “Is 40 your number?”). You can use prompt text (propmt("is 40 your number")) to accomplish this. If the number is too high, have the user enter “H”. If the number is too low, have the user enter “L”. If the computer guessed the number, have the user enter “Y”, and start a new game. Can you write an efficient algorithm so that the computer will find your number in the minimum number of guesses?
+
+var instructions = prompt("Pick a number between 1 and 100. The computer will guess the number by asking if a given number is your number. Tell the computer if it's higher or lower using H and L. Press return to continue.");
+
+var numbers = [1];
+var sum = 0;
+	//loop through the array starting at 1 until i is less than 100 and incrementing one
+	for ( var i = 1; i < 100; i++) {
+		//add one to the current index of the array and push that into the array
+		sum = i + 1;
+		numbers.push(sum);
+	}
+	console.log(numbers);
+
+	//for an array of any size: 
+	//1. find middle element of the array
+	var average = (numbers[0] + numbers.length - 1) / 2;
+	console.log(average);
+	//2. prompt user if said element is higher, lower or the same as their chosen number
+	var prompt2 = prompt("Is " + numbers[i] + " you number? If yes, enter YES. If your number is higher enter H. If your number is lower enter L.");
+	//3. if prompt is higher find average of current element and last element
+	if (prompt2 === "Yes" || prompt2 === "YES" || prompt2 === "yes") {
+		//!!!How do you actually do this - for loop but how to determine what the condition is
+		//4. iterate up to resultant average (??can you insert a variable into the iterator?)
+		for (i = average; i ) {}
+	} //5. if prompt is lower find average of current element and first element
+	else if (prompt2 === "H" || prompt2 === "h") {
+		//6. iterate down to resultant average
+	}
+	
+	//7. return to step 2 until user enters "Y"
+	</script>
+</body>
+</html>
