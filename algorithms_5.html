@@ -16,16 +16,24 @@
 	var guessed = false;
 
 	while(!guessed) {
-		var guess = Math.floor((max + min) /2 );
-		var response = prompt("Is " + guess + " your number?");
-		if (response = "H") {
-			min = guess;
-		} else if (response = "L") {
-			max = guess;
-			 }
 
+		var guess = Math.floor((max + min) / 2 );
+		var response = prompt("Is " + guess + " your number?");
 		
+		if (response === "H") {
+			min = guess;
+		} else if (response === "L") {
+			max = guess;
+		} else if (response === "YES") {
+			guessed = true;
+			alert("Got it!");
+		}
+
 	}
+	
+
+
+	guessNumber ();
 
 	</script>
 </body>
